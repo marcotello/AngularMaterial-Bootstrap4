@@ -1,1 +1,18 @@
-<app-home></app-home>
+<div>
+    <mat-toolbar color="primary">
+      <span><mat-icon>mood</mat-icon></span>
+  
+      <span>Yay, Material in Angular 2!</span>
+      <span><a [routerLink]="['/grid']">Grid</a></span>
+  
+      <button mat-icon-button [mat-menu-trigger-for]="menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+    </mat-toolbar>
+    <mat-menu x-position="before" #menu="matMenu">
+      <button mat-menu-item>Option 1</button>
+      <button mat-menu-item>Option 2</button>
+    </mat-menu>
+
+    <router-outlet></router-outlet>
+</div>

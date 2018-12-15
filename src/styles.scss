@@ -11,6 +11,8 @@
 @import "~bootstrap/scss/reboot";
 // Import Bootsrap grid system
 @import "~bootstrap/scss/grid"; // add the grid
+// Import Bootstrap utilities
+@import "~bootstrap/scss/utilities"; // add css utilities
 // Import after any Bootstrap import to fix the not desire styles
 @import "reset";
 
